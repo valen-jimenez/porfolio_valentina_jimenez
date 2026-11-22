@@ -1,0 +1,152 @@
+/*configuracion general*/
+{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe UI', tahoma, geneva, verdana, sans-serif;
+}
+
+/*fondo claro*/
+body{
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+h1, p{
+    text-align: center;
+}
+
+/*encabezado y navegacion*/
+header{
+    background-color: #1e293b; /*fondo oscuro*/
+    color: #294141;            /*texto blanco*/
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+nav a{
+    color: #383e5e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease; /*transicion suave*/
+}
+/*cambio de color al pasar el cursor (hover)*/
+nav a:hover{
+    color: #19191a;
+}
+/*seccions (espaciado)*/
+section{
+    max-width: 800px;
+    margin: 40px auto; /*separa las secciones verticalmente y las centra*/
+    padding: 30px;     /*espacio interno texturado*/
+    background-color: rgba(255, 255, 255, 0.05); /*sutil separacion visual*/
+    border-radius: 8px;
+}
+/*tabla de habilidades*/
+table{
+    width: 100%;
+    border-collapse: collapse; /*evita bordes dobles*/
+    margin-top: 15px;
+}
+
+table, th, td{
+    border: 2px solid #cbd5e1; /*borde visible*/
+}
+th, td{
+    padding: 12px;
+    text-align: left;
+}
+th{
+    background-color: #334155;
+    color: #ffffff;
+}
+/*formulario centrado*/
+form{
+    max-width: 450px;
+    margin: 0 auto;      /*centra el formulario en la pagina*/
+    display: flex;
+    flex-direction: column;   /*alinea los campos verticalmente*/
+    gap: 15px;                /*separa cada campo del siguiente*/
+    padding: 20px;
+}
+
+form label{
+    font-weight: 600;
+    margin-bottom: -5px;     /*acerca la etiqueta a su campo respectivo*/
+}
+
+form input, form textarea, form button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button{
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0,3s;
+}
+
+form button:hover {
+background-color: #334155;
+}
+
+.pie-de-pagina{
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/*lista que pone los iconos uno al lado del otro*/
+.lista-redes{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.enlace-red{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #334155;
+font-size: 15px;
+font-weight: 500;
+transition: opacity 0,2s ease, transform 0.2s ease;
+}
+
+.enlace-red:hover{
+    opacity: 0.75;
+    transform: translateY(-2px);
+}
+
+.icono.red{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/*tamaño chico para las imagenes de iconos*/
+.lista-redes img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}

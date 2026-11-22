@@ -1,0 +1,230 @@
+/*  Estilos Generales, Fuentes y Fondos (Temática Bioquímica) */
+body {/*imagen de fondo combinada con un gradiente oscuro transparente*/
+    background-image:linear-gradient(rgba(10, 15, 13, 0.85), rgba(10, 15, 13, 0.85)),
+     url(https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/cf/cf.jpg);
+
+     /*propiedades para que la iamgen cubra toda la pantalla y no se repita*/
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     background-color: #0a0f0d;/*fondo de respaldo si la imagen no carga*/
+
+     /**/
+     p{
+        color: white;
+     }
+     
+}
+
+/* Contenedor principal con bordes y márgenes */
+.contenedor-laboratorio {
+    max-width: 800px;
+    width: 100%;
+    background-color: #111a16; /* Contraste sutil */
+    border: 2px solid #39ff14; /* Borde neón */
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.15); /* Resplandor verde */
+}
+
+/* Variación del contenedor para la pantalla de victoria */
+.contenedor-laboratorio.victoria {
+    border-color: #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Estilos de Textos */
+h1, h2, h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    border-bottom: 2px dashed #39ff14;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+}
+
+.narrativa p {
+    line-height: 1.6;
+    color: #a3e6a3; /* Verde más suave para lectura */
+}
+
+.centro {
+    text-align: center;
+}
+
+/* Botones y Elementos de Navegación */
+.boton-progreso {
+    display: inline-block;
+    background-color: #39ff14;
+    color: #000000;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid #39ff14;
+}
+
+.boton-progreso:hover {
+    background-color: transparent;
+    color: #39ff14;
+    box-shadow: 0 0 15px #39ff14;
+}
+
+.panel-codigo {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #1f4227;
+    text-align: center;
+}
+
+.opciones-codigo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.boton-error {
+    display: inline-block;
+    background-color: #221111;
+    color: #ff3333;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 2px solid #ff3333;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.boton-error:hover {
+    background-color: #ff3333;
+    color: #000000;
+}
+
+.enlace-volver {
+    color: #66aa66;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.enlace-volver:hover {
+    text-decoration: underline;
+}
+
+/*Animaciones Simples y Alertas */
+.alerta-sistema {
+    color: #ff3333;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    animation: parpadeoAlerta 1.8s infinite ease-in-out;
+}
+
+.alerta-victoria {
+    color: #00ffff;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+@keyframes parpadeoAlerta {
+    0%, 100% { opacity: 1; text-shadow: 0 0 10px #ff3333; }
+    50% { opacity: 0.2; text-shadow: none; }
+}
+
+.medalla {
+    font-size: 1.5em;
+    color: #00ffff;
+    margin: 20px 0;
+    font-weight: bold;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/*Mecánicas de Pistas Ocultas (Requisito 2)*/
+
+/* PISTA DE SALA 1: Texto camuflado (Mismo color que el fondo del bloque) */
+.contenedor-pista {
+    background-color: #0d1411;
+    padding: 15px;
+    border: 1px solid #1f4227;
+    margin-bottom: 25px;
+}
+
+.texto-camuflado {
+    background-color: #0d1411; /* Mismo color */
+    color: #0d1411; /* Mismo color (invisible) */
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Al seleccionarlo con el mouse se revela automáticamente */
+.texto-camuflado::selection {
+    background-color: #39ff14;
+    color: #000000;
+}
+
+/* PISTA DE SALA 2: Escáner de Retina con Efecto Hover y Transparencia */
+.escaner-retina {
+    position: relative;
+    height: 100px;
+    border: 2px solid #00ffff; /* Cian láser */
+    background: rgba(0, 255, 255, 0.03); /* Transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.instruccion-escaner {
+    color: #00ffff;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Capa oculta que se revela gradualmente con :hover */
+.capa-oculta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 51, 51, 0.95); /* Opacidad alta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.4s ease; /* Efecto suave */
+    z-index: 2;
+}
+
+.escaner-retina:hover .capa-oculta {
+    opacity: 1; /* Revelado al pasar el mouse */
+}
+
+.mensaje-escaner {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #1f4227;
+    padding-top: 15px;
+    text-align: center;
+    color: #66aa66;
+    font-size: 0.85em;
+}

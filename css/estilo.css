@@ -1,0 +1,211 @@
+body{
+    font-family: tahoma, verdana, sans-serif;
+    background-color: #fafafa;
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-degradado-sutil-suave-minimalista_896360-6934.jpg);
+
+    /*hace que la imagen cubra toda la pantalla*/
+    background-size: cover;
+
+    /*centra la imagen*/
+    background-position: center;
+
+    /*evita que se repita en mosaico*/
+    background-repeat: no-repeat;
+    color: #1e293b;
+}
+h1, h2{
+  text-align: center;
+}
+
+
+/*diseño base de cada tarjeta*/
+/*fondo transparente y efecto cristal*/
+.card{
+  background-color: rgba(255, 255, 255, 0.1); /*fondo blanco casi transparente*/
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /*desenfocalo que haya detras de la tarjetay crea un efecto vidrio esmeralizado*/
+  border: 1px solid rgba (255, 255, 255, 0.2); /*dibuja un borde fino, blanco y seitrasparente alrededor*/
+  border-radius: 12px; /*redondea las esquinas de la tarjeta*/
+  padding: 20px; /*agrega un espacio interno entre el borde de la tarjeta y su contenido*/
+  width: 280px; /*fija el ancho de la tarjeta*/
+transition: transform 0.2s ease; /*prepara una animacionpor si se mueve o agranda la tarjeta al pasa el mouse por encima*/
+}
+
+.card-titulo{
+  margin: 0 0 10px 0; 
+  font-size: 20px; /*tamaño de la letra en 20pixeles*/
+  color: #0f172a; /*color del texto*/
+}
+
+/*estilo boton "ver proyecto"*/
+.btn-proyecto{
+  display: inline-block; /*permite que el enlace o boton respete medidas de ancho, alto y margenes sin ocupar todo el ancho de la tarjeta*/
+  padding: 10px 22px; /*le da el tamño al boton*/
+  background-color: #2563eb; /*fondo del boton*/
+}
+
+.destacado{
+  display: flex; /*coloca las tarjetas una al lado de la otra en filas */
+  justify-content: center; /*centra las tarjetas horizontalmente en la pantalla*/
+  gap: 24px; /*deja una separacion entre cada tarjeta*/
+  margin: 24px 0; /*agrega espacio exterior, arriba y abajo de toda la seccion*/
+  flex-wrap: wrap; /*hace que las tarjetas se adapten por ejemplo a un celular*/
+}
+
+.destacado img{  /*magen dentro de la seccion destacada*/
+  width: 45%; /*la iamgen ocupa el 45% del ancho*/
+  max-width: 500px; /*pone un limite para que si se agranda la pantalla la imagen nunca mida mas que eso*/
+  height: auto; /*hace que el ancho de la imagenn se estire ni se deforme*/
+  object-fit: cover; 
+}
+
+.lista-vidrio{
+  max-width: 600px; /*limita el ancho de la lista*/
+}
+.lista-vidrio .list-group-item{
+  background-color: rgba(255, 255, 255, 0.25); /*reemplaza el fondo blanco a uno semitransparente */
+  backdrop-filter: blur(8px); /*desenfoca el fondo y crea el efecto vidrio*/
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3); /*bordes finos y blancos semitransparente */
+  color: #0f172a; /*pinta las letras para qe se lean con claridad sobre el fondo */
+  font-weight: 500; /*grosor intermedio a la letra*/
+}
+
+.minimal-form{
+  max-width: 500px; /*limita el ancho del formulario*/
+  margin: 0 auto; /*centra todo el formulario*/
+  font-family: 'helvetica neue', arial, sans-serif; /*define la tipografia*/ 
+}
+
+.minimal-form .form-group{
+  margin-bottom: 30px; /*deja una separacion ente un campo y el siguiente*/
+}
+
+.minimal-form label{
+  display: block; /*hace que el cuadro para escribir quede justo debajo y no al lado*/
+  margin-bottom: 8px; /*deja un espacio entre el texto y la caja donde escribe el usuario*/
+  font-weight: 500; /*grosor medio a la letra*/
+  color: #0c044d; /*color del texto*/
+}
+
+.minimal-form input,
+.minimal-form textarea{
+  width: 100%; /**/
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid #64748b;
+  background: transparent;
+  color: #f1f5f9;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.minimal-form input::placeholder,
+.minimal-form textarea::placeholder{
+  color: #111111;
+}
+
+.minimal-form input::focus,
+.minimal-form textarea:focus{
+  outline: none;
+  border-bottom-color: #94a3b8;
+}
+
+.minimal-form button{
+  background: #1e568d;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 2px;
+}
+
+.minimal-form button:hover{
+  background: #1a252f;
+}
+
+.footer-portfolio {
+  margin-top: 80px;
+  padding: 40px 24px;
+  background-color: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-etiqueta {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.footer-titulo {
+  margin: 6px 0;
+  font-size: 22px;
+  color: #f8fafc;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.btn-subir {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur (8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-subir:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+
+/* Adaptación para celulares */
+@media (max-width: 480px) {
+  .card{
+    width: 100%;
+  }
+
+  .minimal-form button{
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-subir{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

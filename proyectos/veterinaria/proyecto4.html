@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html long="es"> 
+<head> 
+<meta charset="UTF-8"/>
+<meta name="vieport" content="width=device-width, initial-sacale=1.0">
+<title>veterinaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>NALA VETERINARIA</h1>
+<h2>"el cuidado que tu mascota merece"</h2>
+<p>"cuidamos a tu mejor amigo como si fuera de la familia.
+vacunas, consultas, diagnostico por imagenes y pet shop. porque ellos se merecen lo mejor, estamos 
+siempre listos para cuidarlos."</p>
+
+<div class="contenedor">
+<img src="https://img.magnific.com/fotos-premium/gran-grupo-gatos-perros-mirando-camara-fondo-azul_191971-28557.jpg?semt=ais_hybrid&w=740&q=80" alt="animales mirando" width="700">
+</div>
+<nav>
+<table class="menu">
+<tr>
+<td><a href="#inicio">inicio</a></td>
+<td><a href="#servicios">servicios</a></td>
+<td><a href="#profesionales">profesionales</a></td>
+<td><a href="#horarios">horarios</a></td>
+<td><a href="#turnos">turnos</a></td>
+<td><a href="#contactos">contacto</a></td>
+</tr>
+</table>
+</nav>
+
+ <section id="servicios">
+ <h2>servicios</h2>
+ <ul>
+ <li>consulta veterinaria</li>
+ <li>vacunacion.</li>
+ <li>cirujias</li>
+ <li>peluqueria</li>
+<li>control de peso</li>
+<li>venta de alimetos</li>
+<li>venta de accesorios</li>
+</ul>
+<a href="#inicio">volver arriba</a>
+ </section>
+
+<section id="profesionales">
+<h2>nuestros profesionales</h2>
+<table border="1">
+<tr>
+<th>profesional</th>
+<th>especialidad</th>
+<th>dias</th>
+<th>horarios</th>
+</tr>
+<tr>
+<td>dra.laura gomez</td>
+<td>clinica general</td>
+<td>lunes y miercoles</td>
+<td>08:00 a 13:00</td>
+</tr>
+<tr>
+<td>dr.martin perez</td>
+<td>dermatologia</td>
+<td>lunes y viernes</td>
+<td>16:00 a 21:00</td>
+</tr>
+<tr>
+<td>dra.sofia roldan</td>
+<td>dermatologia</td>
+<td>lunes y viernes</td>
+<td>16:00 a 21:00</td>
+</tr>
+<tr>
+<td>dr.juan gomez</td>
+<td>animales exoticos</td>
+<td>miercoles y viernes</td>
+<td>09:00 a 13:00</td>
+</tr>
+<tr>
+<td>dra.laura gimenez</td>
+<td>nutricion animal</td>
+<td>martes y Sabados</td>
+<td>08:00 a 13:00</td>
+</tr> 
+</table>
+<a href="inicio">volver arriba</a>
+</section>
+
+<section id="horarios">
+<h2>servicios y precios</h2>
+<table border="1">
+<tr>
+<th>servicio</th>
+<th>duracion aproximada</th>
+<th>precios</th>
+</tr>
+<tr>
+<td>consulta veterinaria</td>
+<td>20 minutos</td>
+<td>$25.000</td>
+</tr>
+<tr>
+<td>desparacitacion</td>
+<td>15 minutos</td>
+<td>$10.000</td>
+</tr>
+<tr>
+<td>control de peso</td>
+<td>20 minutos</td>
+<td>$10.000</td>
+</tr>
+<tr>
+<td>peluqueria</td>
+<td>1 hora</td>
+<td>$35.000</td>
+</tr>
+<tr>
+<td>consulta nutricional</td>
+<td>40 minutos</td>
+<td>$30.000</td>
+</tr>
+<tr>
+<td>vacunacion</td>
+<td>20 minutos</td>
+<td>$20.000</td>
+</tr>
+</table>
+
+<section id="turnos">
+<h2>¿como sololicitar tu turno?</h2>
+<ol>
+<li>completar el formulario (datos del responsable)</li>
+<li>ingresar datos de la mascota</li>
+<li>seleccionar el motivo de consulta</li>
+<li>elegir una fecha, horario y prfesional</li>
+<li>enviar la solicitud de turno</li>
+</ol>
+<h2>solicitar un turno</h2>
+<form>
+<legend>datos del responsable</legend>
+<label for="nombre">nombre y apellido:</label>
+<input type="text" id="nombre" name="nombre" required>
+
+<label for="email">correo electronico:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="telefono">telefono:</label>
+<input type="tel" id="telefono" name="telefono" required><br><br>
+
+<legend>datos de la mascota</legend>
+
+<label for="mascota">nombre de la mascota:</label>
+<input type="text" id="mascota" name="mascota" required>
+
+<label for="edad"></label>
+<input type="number" id="edad" name="edad">
+
+<label for="fecha-nacimiento">fecha de nacimiento:</label>
+<input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+
+<label for="tipo">tipo de mascota:</label>
+
+<select id="tipo" name="tipo">
+<option value="perro">perro</option>
+<option value="geto">gato:</option>
+<option value="conejo">conejo:</option>
+<option value="ave">ave:</option>
+<option value="otro">otro:</option>
+</select>
+
+<legend> motivo del turno</legend>
+<label>
+<input type="radio" name="motivo" value="control">control general</label>
+
+<label>
+<input type="radio" name="motivo" value="vacunacion">vacunacion</label>
+
+<label>
+<input type="radio" name="motivo" value="consulta">consulta</label>
+
+<label>
+<input type="radio" name="motivo" value="otro">otro</label>
+
+<h4>informacion adicional</h4>
+<label>
+<input type="checkbox" name="primera consulta">primera-consulta</label>
+
+<label>
+<input type="checkbox" name="vacunas">vacunas al dia</label>
+
+<label>
+<input type="checkbox" name="medicacion">actualmente toma medicacion</label>
+
+<!--datos del turno-->
+<legend>turnos</legend>
+<label for="fecha">fecha:</label>
+<input type="date" id="fecha" name="fecha" required>
+
+<label for="horario">horario:</label>
+<input type="time" id="horario" name="horario" required>
+
+<label for="profesional">profesional:</label>
+<select id="profesional" name="profesional">
+
+<option value="Gomez">dra.Laura Gomez</option>
+<option value="Perez">dr.Martin Perez</option>
+<option value="Roldan">dra.Sofia Roldan</option>
+<option value="Gomez">dr.Juan Gomez</option>
+<option value="Gimenez">dra.Laura Gimenez</option>
+
+</select>
+<label for="comentarios">comentarios o informacion adicional:</label>
+<textarea id="comentarios" name="comentarios" rows="5"></textarea>
+
+<div class="botones">
+    <button type="submit">solicitar turno</button>
+    <button type="reset">limpiar</button>
+</div>
+</form>
+<a href="#inicio">volver arriba</a>
+</section>
+
+<section id="contacto">
+<h2>contacto</h2>
+<p><strong>direccion:</strong>rodriguez peña 6644,mar del plata</p>
+<p><strong>telefono:</strong>0223-685-1055</p>
+<p><strong>correo:</strong>veterinarianala@gmail.com</p>
+<p><strong>horarios:</strong></p>
+<p>Lunes a viernes de 08:00hs a 13:00hs y por las tardes de 16:00hs a 21:00hs</p>
+<p>Sabados de 08:00hs a 13:00hs y de 16:00hs a 21:00hs</p>
+<p>Domingos de 08:00hs a 13:00hs</p>
+
+<h3>redes sociales</h3>
+<p><a href="https://www.instagram.com/" target="_blank">instagram</a> </p>
+<p><a href="https://www.facebook.com/" target="_blank">facebook</a></p>
+<a href="#inicio">volver arriba</a>
+</section>
+
+
+</body>

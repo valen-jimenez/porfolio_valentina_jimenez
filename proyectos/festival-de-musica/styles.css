@@ -1,0 +1,152 @@
+body{
+    background-color: burlywood;
+    /*establece el tipo de letra*/
+    font-family: Arial, sans-serif;
+}
+
+/*encabezado*/
+header{
+    /*pone un color de fondo al encabezado*/
+    background-color: brown;
+    color:gray;
+    /*centra el texto*/
+    text-align: center;
+    /*agrega espacio interno alrededor del contenido*/
+    padding: 30px;
+}
+header h1{
+    /*tamaño de letra*/
+    font-size: 50px;
+    /*color del titulo*/
+    color:black;
+    /*espacio que queda debajo del titulo*/
+    margin-bottom: 10px;
+}
+.eslogan{
+    /*cambia el tamaño*/
+    font-size: 24px;
+    /*pone el texto en cursiva*/
+    font-style: italic;
+}
+header img{
+    /*ocupa el 75% del ancho disponible*/
+    width: 70%;
+    /*evita que sea demasiado grande*/
+    max-width: 800px;
+    /*establece su altura*/
+    height: 350px;
+    /*hace que la imagen ocupe el espacio sin deformarse*/
+    object-fit: cover;
+}
+/*menu*/
+nav{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 18px;
+    position: sticky;
+    top:0;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    margin:0 12px;
+    font-weight: bold;
+}
+/*secciones*/
+section{
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(209, 202, 202);
+    border-radius: 15px;
+}
+h2{
+    color:black;
+    font-size: 30px;
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+}
+h3{
+    color:white;
+
+}
+/*presentacion*/
+.presentacion{
+    background-color: #fff3cd;
+
+}
+/*lista de servicios*/
+.servicios{
+    list-style-type: square;
+    line-height: 2;
+    font-size: 18px;
+}
+/*lista artistas*/
+.artistas{
+    list-style-type: upper-roman;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+.imagen-artista{
+    width: 55%;
+    font-size: 15px;
+}
+/*tablas*/
+table{
+    /*la tabla ocupa todo el ancho disponible*/
+    width: 100%;
+    /*junta los bordes de las celdas*/
+    border-collapse: collapse;
+}
+th{
+    background-color: black;
+    color:white;
+}
+th,td{
+    /*agrga bordes*/
+    border: 2px solid;
+    /*agrega espacio dentro de las celdas*/
+    padding: 15px;
+    /*centra el contenido*/
+    text-align: center;
+}
+/*entradas*/
+.entradas{
+    background-color: #310052;
+}
+/*formulario*/
+.formulario{
+    /*cambia el color de fondo*/
+    background-color:white;
+}
+form{
+    background-color: aquamarine;
+    padding: 25px;
+    /*rodea las esquinas de cualquier elemento*/
+    border-radius: 15px;
+}
+
+/*botones*/
+.botones{
+    text-align: center;
+    margin-top: 25px;
+}
+button{
+    /*color del boton*/
+    background-color: white;
+    color: grey;
+    /*elimina el borde predeterminado*/
+    border: none;
+    /*tamaño interno*/
+    padding: 13px 25px;
+    /*separacion*/
+    margin: 5px;
+    /*esquinas rodeadas*/
+    border-radius: 10px;
+    /*tamaño de texto*/
+    font-size: 16px;
+    /*negrita*/
+    font-weight: bold;
+}
